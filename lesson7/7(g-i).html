@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      length converter
+    </title>
+  </head>
+  <body>
+    <script>
+      function convertLength(a,b,c){
+        if(b=='miles' && c=='km'){
+          console.log(a*1.6);
+        }else if(b=='km' && c=='miles'){
+          console.log(a*0.62)
+        }else if(b=='km' && c=='feets'){
+          console.log(a*3281)
+        }else if(b=='miles' && c=='feets'){
+          console.log(a*5280)
+        }else if(b=='feets' && c=='km'){
+          console.log(a/3281)
+        }else if(b=='miles' && c=='feets'){
+          console.log(a/5280)
+        }else{
+          console.log(`Invalid unit :${a,b}`)
+        }
+      }
+    </script>
+  </body>
+</html>

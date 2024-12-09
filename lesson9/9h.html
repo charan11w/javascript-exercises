@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      live typing
+    </title>
+  </head>
+  <body>
+    <input type="text" placeholder="type" class="js-text" onkeyup="
+      const v=document.querySelector('.js-text');
+
+      document.querySelector('p').innerHTML=v.value;
+      ">
+    <p></p>
+  </body>
+</html>

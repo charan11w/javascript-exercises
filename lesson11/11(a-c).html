@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      11
+    </title>
+  </head>
+  <body>
+    <script>
+      const arr=[1,2,3,4];
+      let a=arr.length;
+      console.log(arr[a-1]);
+
+      function getLastValue(arr){
+        let n=arr.length;
+        return arr[n-1];
+      }
+      console.log(getLastValue(arr));
+
+      function arraySwap(arr){
+        let temp=arr[0];
+        arr[0]=arr[arr.length-1];
+        arr[arr.length-1]=temp;
+
+        return arr;
+      }
+      console.log(arraySwap(arr))
+    </script>
+  </body>
+</html>

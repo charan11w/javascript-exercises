@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      7(e-f)
+    </title>
+  </head>
+  <body>
+    <script>
+      function convertFahreinheit(a){
+        const temp=Math.round((a*9/5)+32);
+        console.log(`${a}C in fahreinheit = ${temp}F` );
+      }
+      function convertFahreinheit(a){
+        const temp=Math.round((a-32)*5/9);
+        console.log(`${a}F in celcius = ${temp}C` )
+      }
+      function  convertTemperature(a,b){
+        if(b=='C'){
+          const temp=Math.round((a-32)*5/9);
+        console.log(`${a}F in celcius = ${temp}C` )
+        }else{
+          const temp=Math.round((a*9/5)+32);
+        console.log(`${a}C in fahreinheit = ${temp}F` )
+        }
+      }
+    </script>
+  </body>
+</html>

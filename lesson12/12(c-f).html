@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      12c
+    </title>
+  </head>
+  <body>
+    <button class="js-button">submit</button>
+    <button class="js-add">Add to cart</button>
+    <p class="js-name"></p>
+    <script>
+        document.querySelector('.js-button')
+        .addEventListener('click',() => {
+          const v=document.querySelector('.js-button');
+          v.innerHTML='Loading...'
+          setTimeout(()=>{
+          v.innerHTML='done!'
+        },2000);
+        })
+
+        let timeoutId;
+
+        document.querySelector('.js-add')
+        .addEventListener('click',() => {
+          const v=document.querySelector('.js-name');
+          v.innerHTML='Added to cart';
+
+          clearTimeout(timeoutId);
+
+          timeoutId=setTimeout(()=>{
+          v.innerHTML='';
+          },2000)
+
+        })
+    </script>
+  </body>
+</html>

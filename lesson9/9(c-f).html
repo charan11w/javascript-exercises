@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      9c
+    </title>
+  </head>
+  <body>
+    <button onclick="
+      s('heads');
+      ">heads</button>
+    <button onclick="
+    s('tails');
+    ">Tails</button>
+    <p class="js1"></p>
+
+    <input type="text" placeholder="username" class="js-text" onkeydown="
+    if(event.key=='Enter'){
+      d()
+    }
+    ">
+    <button class="js-submit" onClick="
+    d();
+    ">Submit</button>
+    <p class="js2"></p>
+    <script>
+      function s(option){
+        document.querySelector('.js1').innerHTML=`You Choose : ${option}`
+      }
+      function d(){
+        const v=document.querySelector('.js-text');
+      let result=v.value;
+      document.querySelector('.js2').innerHTML=`Your name is ${result}`;
+      }
+    </script>
+  </body>
+</html>

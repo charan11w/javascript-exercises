@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      exp 10
+    </title>
+    <style>
+      .js-add{
+        padding:8px 24px;
+        background-color: rgb(255,216,15);
+        color:black;
+        font-size: 14px;;
+        border:none;
+        border-radius:20px;
+      }
+
+      .js-request{
+        background-color: black;
+        color:white;
+        border:none;
+        font-style: bold;
+        font-family:arial;
+        padding:8px 18px;
+        font-size:16px;
+        border-radius:6px;
+      }
+      .js-schedule{
+        background-color: rgb(228, 224, 224);
+        color:black;
+        border:none;
+        font-style: bold;
+        font-family:arial;
+        padding:8px 14px;
+        font-size:16px;
+        border-radius:6px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="js-add">Add to cart</button>
+    <button class="js-request">Request now</button>
+    <button class="js-schedule">Schedule for Later</button>
+
+    <script>
+      const val=document.querySelector('.js-add').classList.contains('js-add');
+      console.log(val);
+    </script>
+  </body>
+</html>

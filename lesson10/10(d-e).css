@@ -1,0 +1,13 @@
+.js-button,.js-button1,.js-button2{
+  background-color: rgb(207, 204, 204);
+  color: black;
+  padding: 8px 10px;
+  border: 0px solid black;
+  font:20px arial bolder;
+  border-radius: 5px 5px;
+}
+
+.toggle{
+  background-color: black;
+  color: rgb(207, 204, 204);
+}

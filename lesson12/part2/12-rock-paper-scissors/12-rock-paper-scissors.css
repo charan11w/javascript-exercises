@@ -1,0 +1,69 @@
+body{
+  background-color: rgb(25, 25, 25);
+  color:white;
+  font-family: arial;
+}
+
+.game-name{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.move-icon{
+  width:50px;
+  height:50px;
+}
+
+.move-button{
+  background-color: transparent;
+  border:3px solid white;
+  height:120px;
+  width:120px;
+  border-radius: 60px;
+  padding:10px;
+  margin-right:10px;
+}
+.js-result{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top:50px;
+}
+.score{
+  margin-top:60px;
+}
+.reset-score,
+.auto-play-button{
+  padding:8px 15px;
+  border:none;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.js-confirm-button{
+  display: flex;
+  justify-content: 1fr 20px 20px;
+  background-color: rgb(25, 24, 24);
+  color: white;
+  font:25px Arial;
+  padding:5px 8px;
+  margin-top: 18px;
+  border:1px solid white;
+  width:650px;
+  align-items: center;
+  height:50px;
+  justify-content: space-between;
+  
+}
+
+.js-confirm1,.js-confirm2{
+  padding: 10px 15px;
+  font : bold 25px arial;
+  color:black;
+  background-color: white;
+  border-radius: 4px;
+  border:none;
+  cursor: pointer;
+
+}
+
+

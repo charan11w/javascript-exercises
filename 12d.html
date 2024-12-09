@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      tex change inside box
+    </title>
+  </head>
+  <body>
+    <button class="js-button" onclick="
+    change();
+    ">submit</button>
+    <script>
+      function change(){
+        const val=document.querySelector('.js-button');
+
+        val.innerHTML='Loading..';
+        setTimeout(function (){
+          val.innerHTML='Subitted';
+        },1000);
+      }
+    </script>
+  </body>
+</html>

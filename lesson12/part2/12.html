@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      part 2
+    </title>
+  </head>
+  <body>
+    <script>
+      function addNum(arr,num){
+        return arr.map((value) => value+num);
+      }
+
+      console.log(addNum([1,2,3],3))
+      console.log(addNum([-1,2,0],10))
+
+      let n=0;
+      function removeEgg(arr,value){
+        return arr.filter((item) => {
+          
+          if(n<2 && item === value){
+            n++;
+            return false;
+          }else{
+            return true;
+          }
+            
+
+        })
+      }
+
+      console.log(removeEgg(['egg','egg','idly','dosa','egg'],'egg'))
+
+    </script>
+  </body>
+</html>

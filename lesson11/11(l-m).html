@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      11 l
+    </title>
+  </head>
+  <body>
+    <script>
+      function minMax(arr){
+        let arr=[];
+        const v={
+          min:null,
+          max:null
+      }
+        for(let i=0;i<arr.length;i++){
+          if(arr[i]<v.min || v.min === null){
+            v.min=arr[i];
+          }
+
+          if(arr[i]>v.max || v.max === null){
+            v.max=arr[i];
+          }
+        }
+        return v;
+      }
+
+      console.log(minMax(arr));
+    </script>
+
+  </body>
+</html>

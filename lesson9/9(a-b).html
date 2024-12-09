@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      9
+    </title>
+  </head>
+  <body>
+    <button>9a</button>
+    <button class="js-button1">
+      9b
+    </button>
+    <script>
+      const v=document.querySelector('button');
+      console.log(v);
+      const v1=document.querySelector('.js-button1');
+      v1.innerHTML='loading';
+      setInterval(function(){
+        v1.innerHTML='9b done!'
+      },2000);  
+    </script>
+  </body>
+</html>
